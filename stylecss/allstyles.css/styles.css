@@ -1,0 +1,549 @@
+/* Author: Arquimedes Aguirre
+Filename:styles.css
+Date: 11/22/2024 */
+
+/*The universal selector was used to format the website in general.*/
+* {
+  box-sizing: border-box;
+}
+/*The background color design for the body of the website is created*/
+body {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: azure;
+  background-image: url(/images/placeholder-images/tripBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+/*The style of the titles was set in that tag*/ 
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 5rem;
+  color: blueviolet;
+  line-height: 0.85;
+  text-align: center;
+}
+/* Added hamburger bottom to format the website menu*/
+.hamburguer, .close {
+  margin: -1rem 3rem;
+  font-size: 2em;
+  color: blue;
+   /* Remove negative margin to avoid unexpected positioning */
+}
+
+/*The header selector is added to format the main header of the page.*/
+header {
+  margin: 1rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; /* Adjust padding for consistent spacing */
+  
+}
+
+/*The menu bar style was created with different properties and values*/
+nav {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+  background-color: purple;
+  background-image: url(https://assets.codepen.io/296057/lil-graydots.png);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+/*A pseudoclass was created so that the menu window would open and close.*/
+nav:target {
+  transform: translateY(0);
+}
+/*The unordered list was given style.*/
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.5rem;
+}
+/*The internal design of the bar menu was formatted and styled.*/
+nav li:first-child {
+  margin-top: 0;
+}
+
+nav a { 
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: blueviolet;
+  border-top: 5px solid #00bff3;
+  border-bottom: 5px solid #00bff3;
+}
+
+/*A pseudoclass was created so that the menu bar, had a focus effect.*/
+nav a:focus,
+nav a:hover {
+  color: black;
+  background-color: greenyellow;
+  background-image: url(https://assets.codepen.io/296057/lil-bluedots.png);
+  
+}
+.close:hover { 
+  background-image: none; 
+  background-color: transparent; 
+}
+/* style for the imagen logo placed in the website*/
+#logo {
+  position: absolute;
+  top: 20px; /* Move it further down */
+  right: 20px; /* Align it to the right edge */
+  display: flex;
+  align-items: center;
+}
+#logo img {
+  width: auto;
+  height: 60px; /* Adjust the height as needed */
+  margin-top: -3px; /* Consistent margin */
+  margin-bottom: auto;
+  margin-right: 5em;
+}
+.logo {
+  max-width: 60%;
+  min-height: 30%;
+  margin: -0.5em;
+  padding: 1px;
+}
+@keyframes slideme {
+  from { 
+    margin-left: 100%;
+    width: 300%;  
+  }
+  50%  {  
+    margin-left: 50%;
+    font-size: 250%; 
+  }
+  to   {
+    font-size: 500%;
+    margin-left: 0%;
+    width: 100%; 
+    }
+  }
+/* Styles for the header container */
+.grid.header {
+  display: flex; 
+  justify-content: center; /* Center the content horizontally */ 
+  align-items: center; /* Center the content vertically */ 
+  padding: 80px 20px 20px 20px; /* Add top padding to create space */ 
+  background-color: #f8f9fa; /* Light background color */ 
+  border-bottom: 2px solid #ddd; /* Border at the bottom */
+  background-image: url(/images/placeholder-images/bg-sunset-ocean.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; /* use Either 'auto' or 'cover' */
+  max-width: 1200px; /* Match the max-width with other containers */ 
+  margin: 0 auto; /* Center the header horizontally */ 
+  padding: 20px; /* Consistent padding */ 
+  border-radius: 10px; /* Optional: for a consistent look */ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for a consistent look */
+}
+.grid.header h1 { 
+  animation-duration: 5s;
+  animation-name: slideme;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;		 
+}
+/* Styles for the h1 element */
+.grid.header h1 { 
+    font-size: 5rem; 
+    margin: 0; 
+    color: #333; /* Text color */ 
+}
+/* Styles for the link */ 
+.grid.header h1 a {
+    text-decoration: none; /* Remove underline */ 
+    color: inherit; /* Inherit color from the parent */ 
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+/* Styles for the link on hover */ 
+.grid.header h1 a:hover { 
+    color: #007bff; /* Change color on hover */ 
+}
+
+/*Main container using grid layout*/
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout*/
+  grid-template-rows: auto; /* Add rows, can specify more precisely if needed */
+  grid-gap: 20px; /* Consistent gap*/
+  padding: 20px; /* Consistent padding */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Adjusting the grid for specific sections */
+.grid.hero, .grid.sidebar {
+  grid-column: span 1; /* Each takes up one columns */
+  grid-row: auto; /* Auto height based on content */
+}
+.grid.content {
+  display: flex; /*Use flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center items vertically */
+  align-content: center; /* Center items horizontally */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #007bff;
+  min-height: 100px; /* Ensure the container has some height */
+  max-height: fit-content; /* Allow it to grow based on content */
+  margin: 0 auto; /* Center the content horizontally */
+  width: 100%; /* Full width of the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for a consistent look */
+  text-align: center; /* Ensure text is centered */
+}
+.grid.content {
+  grid-column: span 2; /*Each takes up two columns */
+  grid-row: 500px; /* Auto height based on content */
+}
+.grid.content .section .narrow-paragraph {
+  max-width: 1000px; /* Limit the width for narrow paragraphs */
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: justify; /* Justify text for better readability */
+} 
+/* Styling the image wrapper */
+.image-wrapper {
+  display: flex; /* Use flexbox to control alignment */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin: 15px 0; /* Add some vertical margin for spacing */
+  padding: 10px; /* Add padding around the image */
+  background-color: #f0f0f0; /* Light background color */
+  border-radius: 10px; /* Consistent border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  max-width: 100%; /* Ensure the wrapper does not exceed the container width */
+} 
+/* Ensure existing .the-image styles are maintained */
+.image-wrapper .the-image .fotorama {
+  width: 100%;
+  max-width: 500%; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.fotorama {
+  width: 100%; /* Ensure the gallery takes the full width of its container */
+  height: 80%; /* Maintain aspect ratio */
+  max-width: 900%; /*Set a maximum width to prevent it from being too large */
+  margin: 0 auto; /* Center the gallery within its container */
+}
+.fotorama img {
+  max-width: 100%; /* Ensure images do not exceed the container width*/
+  max-height: 100%; /*Allow images to expand based on content */
+  border: none !important;
+  width: 40% !important;
+  height: auto !important; /* Maintain aspect ratio */
+}
+.values, .related-images, .related-posts, .linkinterest, .linkrelated, .linkadditional, .boxd, .boxe,  .finiquito1, .finiquito2 {
+  grid-column: span 1; /* Each takes up one columns */
+  grid-row: auto; /* Auto height based on content */
+}
+.finiquito3 {
+  grid-column: span 2; /* Each takes up two columns */
+  grid-row: auto; /* Auto height based on content */
+}
+/* Sections using flexbox layout */
+.grid.hero,
+.grid.sidebar,
+.values,
+.related-images,
+.related-posts,
+.linkinterest,
+.linkrelated,
+.linkadditional,
+.boxd,
+.boxe,
+.finiquito1,
+.finiquito2,
+.finiquito3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Consistent padding */
+  background-color: #f8f9fa; /* Conssitent secondary background color */
+  border-radius: 10px; /* Conssitent primary color border */
+  border: 1px solid #007bff; /*Consistent primary color border */
+}
+/* Section title styling for contrast */
+.section h2,
+.section h3 {
+  font-size: 1.5rem; /* Consistent font size for large text */
+  color: #ff5722; /* Consistent accent color */
+  margin-bottom: 20px; /* Consistent gap */
+  text-align: center;
+}
+/* Paragraph and list styling for readability */
+.section p,
+.section ul {
+  font-size: 1rem; /* Consistent font size for medium text */
+  color: #333; /* Consistent text color */
+  line-height: 1.6;
+  margin-bottom: 20px; /* Consistent gap */
+  text-align: justify;
+}
+/* List item styling */
+.section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.section ul li {
+  margin-bottom: 15px; /* Consistent padding */
+}
+/*Image styling */
+.the-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px; /* Consistent border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Consistent gap */ 
+  margin-bottom: 5%;     
+}
+/* Video styling to apply styling */
+video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px; /* Consistent border radius */
+  margin-top: -8%; /* Consistent gap */
+  overflow: auto;
+}
+/* styles applied to the sidebar of the website*/
+.grid.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #007bff;
+  min-height: 100vh;
+}
+.grid.sidebar .section {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: -40px;
+  margin-bottom: 15px;
+}
+.grid.sidebar .section h2 {
+  font-size: 1.5rem;
+  color: #ff5722;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.grid.sidebar .section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.grid.sidebar .section ul li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+.grid.sidebar .section p {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Style that gives design to the entire website*/
+#wrapper1 {
+  max-width: 1400px;
+  width: 100%;
+  min-height: 1400px;
+  height: 100%;
+  margin: 0 auto;
+}
+/*Footer a flex display was created to format the footer section of the website*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  grid-template-rows: 250px;
+  place-items: center;
+  background-color: gray;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items vertically*/
+  align-items: center; /* Center items horizontally */
+  padding: 10px;
+  width: 100%; /* Full width */ 
+}
+/* Ensure the logo is positioned on the left*/
+.footer-logo {
+  position: relative;
+  top: 5em;
+  left: -5em;
+}
+.logo-footer {
+  margin-right: 100%;
+}
+img {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+.element-information {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30%;
+  margin-top: -5%;
+  padding: 1px;
+}
+
+/* Text and link styles */
+footer p, footer a {
+  margin: 1px 0; /* Proximity: space elements evenly*/
+  margin-top: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition*/
+}
+footer a:hover {
+  color: #ffeb3b; /* High contrast for hover*/
+} 
+/*A class was created to format the socialnetwork of the website*/
+.socials {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0;
+  margin-top: -10px;
+  margin-right: -30%;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Proximity: equal spacing between items */
+}
+.socials li {
+  display: flex;
+  align-items: center;
+}
+.socials img {
+  width: 40px;
+  height: auto; /* Maintain aspect ratio*/
+  transition: opacity 0.3s ease; /* Smooth transition*/
+}
+.socials img:hover {
+  opacity: 0.5;
+}
+/*Media queries of website was created with a size max-width: 480px*/
+
+@media (max-width: 360px) {
+  body {
+    background-size: contain; /* Adjust background size */
+    padding: 10px; /* Add padding for content */
+  }
+  header {
+  flex-direction: column; /* Change to a single column layout */
+  padding: 10px; /* Add padding for content */
+  margin: 0; /* Remove margin */
+  }
+  #navbar ul {
+    flex-direction: column; /* Change to a single column layout */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
+  #navbar ul li {
+    display: block; /* Display list items as blocks */
+    margin: 5px 0; /* Add vertical margin for spacing */
+  }
+  #navbar {
+    width: 100%; /* Add padding for touch targets */
+  }
+  .hamburguer, .close {
+    display: block; /* Show the hamburger icon */
+    margin: 10px;  /* Remove margin */ 
+    font-size: 1.5em; /* Adjust font size */
+  }
+  nav {
+    height: auto; /* Adjust height for content */
+    padding: 0.5rem; /* Adjust padding */
+  }
+  nav ul {
+    flex-direction: column; /* Change to a single column layout */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
+  nav a {
+    padding: 0.5rem 1rem; /* Adjust padding for touch targets */
+    font-size: 1.2rem; /* Adjust font size */
+  }
+  #logo {
+    top: 10px;
+    right: 10px;
+    position: absolute; /* Adjust position */
+  }
+  #logo img {
+    max-width: 35%; /* Adjust the width */
+    height: 80%; /* Maintain aspect ratio */
+    margin-top: 5px; /* Adjust margin */
+  }
+  .logo {
+    max-width: 20%; /* Adjust the width */
+    min-height: 20%; /* Adjust the height */
+    margin: 0; /* Remove margin */
+  }
+  h1 {
+    font-size: 3em; /* Smaller font sizes for titles */
+    line-height: 1.2;
+  }
+  .main-container {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+  .grid.sidebar {
+    margin-top: 20px; /* Add space between the main content and sidebar */
+  }
+  .grid.sidebar .section {
+    margin-top: 0; /* Remove top margin for consistency */
+  }
+  .footer-content {
+    padding: 10px; /* Consistent padding */
+  }
+  .element-information {
+    margin-left: 0; /* Remove left margin for consistency */
+  }
+  .socials {
+    margin-right: 0; /* Remove right margin for consistency */
+  }
+}
+

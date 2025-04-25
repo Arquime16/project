@@ -1,0 +1,161 @@
+<!--Author: Arquimedes Aguirre
+Filename:contact.html
+Date: 11/22/2024-->
+<!DOCTYPE html>
+<html lang="en">
+  <!--This section includes tags that allow you to display the style of the web page and the description related to SEO.-->  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Insurance, this is a contact form where each visitor can leave their comments, requests, doubts or questions about our services.">
+    <link href="stylecss/allstyles.css/contact.css" rel="stylesheet" type="text/css">
+    <link href="stylecss/allstyles.css/normalize.css" rel="stylesheet" type="text/css">
+    <!--The title of the subject matter of the website-->
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/ca925ae119.js" crossorigin="anonymous"></script>
+    <!--The style of the contact form was made, with several entries and data.-->
+    <style>
+      form {
+        background-color: #eaeaea;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 350px;
+        padding: 10px;
+      }
+      label {
+        float: left;
+        clear: left;
+        display: block;
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 10px;
+        margin-left: 450px;
+      }
+      input,
+      textarea {
+        margin-top: 10px;
+        display: block;
+      }
+      input {
+        width: 300px;
+      }
+      textarea {
+        width: 300px;
+        height: 100px;
+      }
+      input[type="submit"] {
+        margin-left: 110px;
+      }
+      form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 3em 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 1em;
+        gap: 1em;
+        background-color: #eaeaea;
+        font-family: Arial, Helvetica, sans-serif;
+        min-width: 25em;
+        width: 100%;
+        padding: 1.5em;
+      }
+      input[type="submit"] { 
+        display: flex; 
+        justify-content: center; /* Center the submit button */ 
+        align-items: center; /* Center vertically */ 
+        grid-column: span 4; /* Span across both columns */ 
+        width: 10em; /* Fixed width for submit button */ 
+        padding: 10px; 
+        background-color: #007bff; 
+        color: #fff; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 1rem; 
+        transition: background-color 0.3s ease; 
+        margin-top: 10px; /* Spacing above the button */
+      }
+      input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 10em;
+        margin-left: 0;
+        text-align: center;
+      }
+      input[type="submit"]:hover { 
+        background-color: #0056b3; 
+      }
+    </style>
+  </head>
+  <body>
+    <!--In this section we can configure the navigation menu botton hamburguer and add links associated with the files in the same folder, An unordered list was also created to format the content.-->
+    <header>
+      <a class="hamburguer" href="#navbar" aria-label="Open main menu.">
+        <span class="sr-only">Open main menu</span>
+        <i class="fa-solid fa-burger" aria-hidden="true"></i></a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="plans.html">Our Plans</a></li>
+          <li><a href="getq.html">Get Quote</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="close" href="#" aria-label="close main menu.">
+          <span class="sr-only">Close main menu</span>
+          <i class="fa-solid fa-rectangle-xmark" aria-hidden="true"></i></a>
+      </nav>
+      <!-- Be add a script tag for to give welcome to website-->
+      <script>alert("Welcome to my web page!");</script>
+    </header>
+    <div id="logo">
+      <img src="images/placeholder-images/logo_sin_nombre_1.png" alt="Logo Insurance" class="logo" loading="lazy">
+    </div>
+    <!-- This div was added to place the logo outside the menu bar.-->
+    <div class="grid header">
+      <h1><b><a href="index.html">Travel Assistance</a></b></h1>
+    </div>
+    <!--Contact form, the input tag and label were used to enter the data-->
+    <div id="imhero"></div>
+    <main>
+        <h1>Contact Us</h1>
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+      <label for="myName">Name:</label>
+      <input type="text" name="myName" id="myName">
+      <label for="myLastname">Last Name:</label>
+      <input type="text" name="myLastname" id="myLastname">
+      <label for="myEmail">E-mail:</label>
+      <input type="text" name="myEmail" id="myEmail">
+      <label for="myComments">Comments:</label>
+      <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    </main>
+      <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/placeholder-images/logo_sin_nombre_1.png" alt="Logo Insurance" class="logo-footer" loading="lazy">
+        </div>
+        <div class="element-information">
+          <p><small><i>Copyright &copy; 2024 by Arquimedes Aguirre. All Rights Reserved</i></small></p>
+          <a href="mailto:arquimedes.aguirre@gmail.com">arquimedes.aguirre@gmail.com</a>
+          <h2>Follow us on social media</h2>
+        </div>  
+        <!-- Add socialnetworks proposses of marketing -->
+        <ul class="socials">
+          <li><a href="#" target="_blank"><img src="images/placeholder-images/icon-logo-twitter.png"
+          alt="Twitter"></a></li>
+          <li><a href="#" target="_blank"><img src="images/placeholder-images/icon-logo-linkedin.png"
+          alt="Linkedln"></a></li>
+          <li><a href="#" target="_blank"><img src="images/placeholder-images/icon-logo-facebook.png"
+          alt="Facebook"></a></li>
+          <li><a href="#" target="_blank"><img src="images/placeholder-images/icon-logo-youtube.png"
+          alt="Youtube"></a></li>
+          <li><a href="#" target="_blank"><img src="images/placeholder-images/icon-logo-instagram.png"
+          alt="Instagram"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
