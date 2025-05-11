@@ -19,10 +19,10 @@ body {
 }
 /*The style of the titles was set in that tag*/ 
 h1 {
+  color: blueviolet;
   font-family: "Times New Roman", Times, serif;
   font-weight: 300;
   font-size: 5rem;
-  color: blueviolet;
   line-height: 0.85;
   text-align: center;
 }
@@ -42,7 +42,6 @@ header {
   justify-content: space-between; 
   align-items: center; 
   padding: 20px; /* Adjust padding for consistent spacing */
-  
 }
 
 /*The menu bar style was created with different properties and values*/
