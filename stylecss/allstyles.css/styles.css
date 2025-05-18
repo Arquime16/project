@@ -229,6 +229,37 @@ nav a:hover {
   margin: 0 auto; /* Center the content horizontally */
   text-align: justify; /* Justify text for better readability */
 } 
+/* Styling the table container */
+.table-container {
+  width: 90%;
+  margin: 30px auto 30px auto;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+/*Styling the table */
+table {
+  margin: auto;
+  width: 100%;
+}
+/* Styling the table headers */
+th {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+/* Styling the table cells */
+td {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light Border */
+  text-align: center;
+}
+/* Adding alternate row colors for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 /* Styling the image wrapper */
 .image-wrapper {
   display: flex; /* Use flexbox to control alignment */
@@ -242,7 +273,7 @@ nav a:hover {
   max-width: 100%; /* Ensure the wrapper does not exceed the container width */
 } 
 /* Ensure existing .the-image styles are maintained */
-.image-wrapper .the-image .fotorama {
+.image-wrapper .the-image {
   width: 100%;
   max-width: 500%; 
   height: auto;
@@ -292,6 +323,20 @@ nav a:hover {
   background-color: #f8f9fa; /* Conssitent secondary background color */
   border-radius: 10px; /* Conssitent primary color border */
   border: 1px solid #007bff; /*Consistent primary color border */
+}
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }
 /* Section title styling for contrast */
 .section h2,
