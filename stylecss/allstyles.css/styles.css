@@ -203,7 +203,6 @@ nav a:hover {
   grid-column: span 1; /*Each takes up one columns*/ 
   grid-row: auto; /*Auto height based on content*/
 }
-
 .grid.content {
   display: flex; /*Use flexbox layout */
   flex-direction: column; /* Arrange items vertically */
