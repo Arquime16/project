@@ -740,7 +740,12 @@ div.content-title h2 {
 
   #logo img {
     height: 40px;
-    margin-right: 0;
+    width: 40px;
+    margin-right: 30%;
+    position: absolute;
+    top: 20px;
+    right: 30%;
+    margin-right: 15px;
   }
 
   /* Navigation menu */
