@@ -35,12 +35,9 @@ h1 {
 
 /*The header selector is added to format the main header of the page.*/
 header {
-  margin: 1rem;
-  margin-top: 40px;
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  padding: 20px; /* Adjust padding for consistent spacing */
 }
 
 /*The menu bar style was created with different properties and values*/
@@ -112,7 +109,6 @@ nav a:hover {
 }
 /* style for the imagen logo placed in the website*/
 #logo {
-  position: absolute;
   top: 30px; /* Move it further down */
   right: 50px; /* Align it to the right edge */
   display: flex;
@@ -740,12 +736,7 @@ div.content-title h2 {
 
   #logo img {
     height: 40px;
-    width: 40px;
-    margin-right: 30%;
-    position: absolute;
-    top: 20px;
-    right: 30%;
-    margin-right: 15px;
+    width: auto;
   }
 
   /* Navigation menu */
@@ -852,7 +843,7 @@ div.content-title h2 {
   }
 
   #logo img {
-    height: 50px;
+    height: 40px;
     margin-right: 1rem;
   }
 
