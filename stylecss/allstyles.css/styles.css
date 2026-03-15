@@ -730,6 +730,11 @@ div.content-title h2 {
    ============================ */
 @media (max-width: 600px) {
 
+  /*Body*/
+  body {
+    width: 200vw;
+  }
+
   /* Header layout */
   header {
     flex-direction: column;
