@@ -121,7 +121,7 @@ nav a:hover, nav a:focus {
   background-image: url(https://assets.codepen.io/296057/lil-bluedots.png) !important;
 }
 
-/* Responsive improvements */
+/* Responsive improvements 
 @media (max-width: 360px) {
   .main-container {
     grid-template-columns: 1fr !important;
@@ -144,6 +144,6 @@ nav a:hover, nav a:focus {
   .grid.sidebar {
     margin-top: 20px !important;
   }
-}
+}*/
 
 
