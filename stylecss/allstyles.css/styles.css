@@ -732,7 +732,10 @@ div.content-title h2 {
 
   /*Body*/
   body {
-    width: 150vw;
+    width: 100vw;
+    height: 100vh;
+    padding: -50%;
+    margin: -20px;
   }
 
   /* Header layout */
