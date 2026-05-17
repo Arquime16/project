@@ -1,0 +1,108 @@
+/* ==========================================
+   MEDIUM SCREENS (800px)
+   ========================================== */
+@media screen and (min-width: 800px) {
+
+  /* Header spacing */
+  header {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  #logo img {
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  /* Navigation bar */
+  nav {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Main grid becomes 1 column or flexible */
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  /* Content blocks */
+  .grid.content {
+    grid-column: span 1;
+    padding: 20px;
+  }
+
+  /* Sidebar */
+  .grid.sidebar .section {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  /* Images scale nicely */
+  .image-wrapper .the-image,
+  .the-image {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  /* Table container */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Strategic planning blocks */
+  #content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .content-mission,
+  .content-vision {
+    width: 45%;
+    min-width: 280px;
+  }
+
+  /* Four-layout grid becomes 2 columns */
+  #fourlayout {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  #fourlayout > div {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  /* Footer layout */
+  footer {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .footer-logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .element-information {
+    margin: 0;
+    padding: 0;
+  }
+
+  .socials {
+    margin: 10px auto;
+    justify-content: center;
+  }
+
+}
