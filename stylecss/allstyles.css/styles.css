@@ -110,7 +110,7 @@ nav a:hover {
 }
 /* style for the imagen logo placed in the website*/
 #logo {
-  top: -1px; /* Move it further down */
+  top: 10 px; /* Move it further down */
   right: -45px; /* Align it to the right edge */
   position: relative;
   display: flex;
