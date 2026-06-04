@@ -733,6 +733,9 @@ a.hamburguer{
 .grid.header{
   margin-top: 15px;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 
 
