@@ -31,7 +31,8 @@ h1 {
 .hamburguer, .close {
   padding: 1rem;
   font-size: 2em;
-  color: blue; 
+  color: blue;
+  text-decoration: none;
 }
 
 /*The header selector is added to format the main header of the page.*/
@@ -56,11 +57,12 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 15vh;
+  height: auto;
+  min-height: 15vh;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   transform: translateY(-100%);
   transition: transform 0.2s ease;
 }
